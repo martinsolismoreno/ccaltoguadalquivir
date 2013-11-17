@@ -1,0 +1,252 @@
+/*****************************************************************************************************************/
+/******************************** Estilos generales  *************************************************************/
+/*****************************************************************************************************************/
+body {font-family: Arial, Helvetica, sans-serif; text-align:center; background: #FFF; color: #000; margin: 0px; padding: 0px}
+#contenedor {width: 990px; margin: 0px auto;  padding: 0px;}
+
+input, textarea, select {border: 1px solid #666; color:#294390; font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size: 0.9em;}
+div.formulario p.expl { float: right; text-align:left; margin: 5px 5px 0 0px; padding: 0px; width: 64%; font-size: 0.7em; color:#777}
+div.formulario p.error {display:inline; font-size: 0.9em; text-align:center; padding: 3px; margin: 0px; }
+div.formulario input.desactivada {width: 65%; float:right; font-size: 0.9em; text-align:center; background: #800033; color: white; padding:.2em 0; margin: 1em 0 0 0;}
+
+.clear {clear:both;}
+.error {background: #800033; color: white; padding:.2em;}
+.boton {color:#000; font-weight:normal}
+.boton:hover {background:#888; color:#FFF}
+a {text-decoration: none;}
+
+ul {list-style:none;  display:inline;}
+
+input[readonly], select[readonly]  {color:#294390; background: #EEE; border:none; padding:3px 0px;}
+input:disabled, select:disabled, textarea:disabled  {color:#294390; background: #EEE; border:none; padding:3px 0px;}
+
+
+/*****************************************************************************************************************/
+/******************************** Formatos específicos de cada plantilla *****************************************/
+/*****************************************************************************************************************/
+
+/* Informacion.tpl*/
+
+#texto {color: #33564B; font-family:Verdana,sans-serif; text-align:left;}
+#texto span.iniparrafo {font-size: 1.2em; font-weight: bold;}
+#texto p  {margin: 15px; padding-left: 0px; font-size: 0.9em; text-indent: 6em}
+#texto p.nota  {margin: 25px; padding-left: 0px; font-size: 0.8em; text-indent: 0em; color: #000; font-weight: normal;}
+#texto a {color: inherit;text-decoration:underline;}
+#texto a:hover {color: #36260C;}
+#texto p.nota span {background-color: #800033; color: #FFF;}
+#texto img.paleta {text-align:center; margin: 15px 0px 15px 220px;}
+
+/* Cabecera.tpl */
+#cabecera {width:990px; height: 170px; margin: 0px auto;  padding: 0px;}
+#cabecera #logo {float: left; width:170px; height: 170px; margin: 0px;  padding: 0px;}
+#cabecera #titulares {float: right; width: 820px; height:170px; margin: 0px;  padding: 0px;}
+#cabecera #titulares #titulo {float: left; width: 660px; height:85px; margin: 0px;  padding: 0px;}
+#cabecera #titulares #pagina {float: left; width: 660px; height:85px; margin: 0px;  padding: 0px;}
+#cabecera h1 {font-weight: bold; margin: 10px; color: #666; font-size: 1.6em; }
+#logo a {background: url("../imagenes/logo.gif") no-repeat; display:block; width:170px; height: 170px; margin:0px; padding: 0px;}
+#logo a:hover {background: url("../imagenes/logohover.gif");}
+#titulo a {background: url("../imagenes/titulo.gif") no-repeat; display:block; width:820px; height: 85px; margin:0px;  padding: 0px;}
+#titulo a:hover {background: url("../imagenes/titulohover.gif") no-repeat; display:block; width:820px; height: 85px; margin:0px;  padding: 0px; }
+#mensajes {margin: 0 auto; padding:0;}
+#mensajes p {margin: 0; background: #33564B; color: #FFF; padding: .3em}
+#mensajes.error p {background: #800033; color: white; padding: .3em}
+
+/* Mensajes.tpl */
+div.formMensaje h1  {width:990px; margin: 100px 0px; color: #33564B; font-size: 1.6em; font-weight: bold; }
+div.formMensaje h1.error  {width:990px; margin: 100px 0px; background: #FFF; color: #800033; font-size: 1.6em; font-weight: bold; }
+
+/* Pie.tpl */
+#pie {width: 990px; margin: 0px auto; margin-top:10px; padding: 0px; background: #FFF; color: #294390;}
+#pie p.linkAlt {margin-top: 15px;}
+#pie p.linkAlt a {font-size: 0.8em; color: #000}
+#pie p.linkAlt a:hover {text-decoration:underline;}
+#pie p.link {margin-top: 25px; padding:.5em; background:#294390; color: #FFF}
+#pie p.link a {color: #FFF;}
+#pie p.link a:hover {text-decoration:underline;}
+
+#valid {width: 990px; margin: 0px auto; margin-top:10px; padding: 0px; background-color: #FFF;}
+#valid ul {float: right; margin: 0px 10px 0px 0px;}
+#valid li.valid {float: right; margin:0; padding:4px 7px;}
+#valid li.valid a {width:88px; height:31px; margin:0px; padding:0px; background-color:#FFF; display:block;  color:inherit; }
+#valid a {color:#D6BC27; text-decoration: none; }
+#valid a:hover {color:#FFF;}
+
+#valid li.xhtml a {background: url("../imagenes/valid-xhtml10.png") no-repeat;}
+#valid li.css a  {background: url("../imagenes/vcss.gif") no-repeat;}
+
+#valid li.xhtml:hover    a {background: url("../imagenes/valid-xhtml10-blue.png")  no-repeat;}
+#valid li.css:hover      a {background: url("../imagenes/vcss-blue.gif")  no-repeat;}
+
+/* Conectar.tpl */
+#formConectar .formulario {width: 300px; margin: 50px 0px 70px 300px; float: left;}
+#formConectar label {display: block; float: left; clear: both; text-align: right; margin: 20px 0px 0px; padding: 0px; width: 90px; }
+#formConectar input { float: right; margin: 20px 0px 0px; padding: 0px; width: 200px; height: 22px; }
+
+/* Recordar.tpl */
+#formRecordar .formulario {width: 500px; margin: 50px 0px 90px 12% ; float: left;}
+#formRecordar label {display: block; float: left; clear: both; text-align: right; margin: 0.9em 5px 0 0; width: 45%; }
+#formRecordar input { float: right; margin: 1em 0 10px 0; width: 50%; }
+
+/* Registro.tpl */
+#formRegistro .formulario {width: 300px; margin: 50px auto; }
+#formRegistro label {margin: 50px auto; margin-left: 20px;}
+#formRegistro input.boton{width: 200px; margin: 50px auto;}
+
+/* formUsuario.tpl */
+#formUsuario .formulario {width: 600px; margin: 50px 0px 0px 9% ; float: left;}
+#formUsuario div.formulario > label {float: left; clear: both; text-align: right; margin: 0.6em 5px 0 0; width: 30%; }
+#formUsuario div.formulario > input, select { float: right; margin: 1em 0 0 0; width: 65%; }
+#formUsuario select { overflow: scroll; }
+#formUsuario #sexo label {margin: 10px 45px 0px 25px;}
+#formUsuario #sexo label.deshabilitada {float: left; margin: 0px auto;}
+#formUsuario #sexo {margin: 12px auto; float: right; width: 65%; }
+
+/* formEmpresa.tpl */
+#formEmpresa .formulario {width: 600px; margin: 50px 0px 0px 9% ; float: left;}
+#formEmpresa label {display: block; float: left; clear: both; text-align: right; margin: 0.6em 5px 0 0; width: 30%; }
+#formEmpresa input, #formEmpresa textarea, #formEmpresa select { float: right; margin: 1em 0 0 0; width: 65%; }
+#formEmpresa select { overflow: scroll; }
+#formEmpresa img {float: left; margin: 12px 0px 0px 25px; border: 1px solid #CCC;}
+#formEmpresa input [type=file] { width: 65%; }
+
+/* formOferta.tpl */
+#formOferta .formulario {width: 600px; margin: 50px 0px 0px 9% ; float: left;}
+#formOferta label {display: block; float: left; clear: both; text-align: right; margin: 0.6em 5px 0 0; width: 30%; }
+#formOferta input, #formOferta textarea, #formOferta select { float: right; margin: 1em 0 0 0; width: 65%; }
+#formOferta select { overflow: scroll; }
+#formOferta img {float: left; margin: 12px 0px 0px 25px;  border: 1px solid #CCC}
+#formOferta input [type=file] { width: 65%; }
+
+/* formNoticia.tpl */
+#formNoticia .formulario {width: 600px; margin: 50px 0px 0px 9% ; float: left;}
+#formNoticia label {display: block; float: left; clear: both; text-align: right; margin: 0.6em 5px 0 0; width: 30%; }
+#formNoticia input, #formNoticia textarea, #formNoticia select { float: right; margin: 1em 0 0 0; width: 65%; }
+#formNoticia select { overflow: scroll; }
+#formNoticia img {float: left; margin: 12px 0px 0px 25px;  border: 1px solid #CCC}
+#formNoticia input [type=file] { width: 65%; }
+
+/* vistaEmpresa.tpl */
+div.vistaEmpresa {float: left; width: 990px; height: 170px; margin: 50px 0px; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; overflow:hidden;}
+div.vistaEmpresa div.logoempresa {float: left; width: 170px; height: 170px; margin: 0px; background: inherit;}
+div.vistaEmpresa div.textoEmpresa {float: left; width: 660px; height: 170px; margin: 0px; background: inherit;}
+div.vistaEmpresa div.franja {float:right; width: 169px; height: 45px; margin: 0px 0px 5px; background: #EEE; border-left: solid 1px #EEE}
+div.vistaEmpresa div.datosContacto {float: right; width: 169px; height: 120px; margin: 0px; background: inherit; border-left: solid 1px #EEE}
+
+
+div.vistaEmpresa div.nombre {float: left; width: 660px; height: 45px; margin: 0px 0px 3px 0px; background: #EEE}
+div.vistaEmpresa div.nombre p {margin: 7px auto; font-size: 1.5em; font-weight:bold; color:#294390;}
+div.vistaEmpresa div.descripcion {float: left; width: 645px; height: 65px; margin: 3px 5px 3px 10px; background: inherit;}
+div.vistaEmpresa div.descripcion p {text-align:left; font-size: 0.9em; font-family: Times, serif; color:#000; margin: 0px auto; padding: 0px;}
+div.vistaEmpresa div.direccion   {float: left; width: 660px; height: 25px; margin: 3px 0px 0px 0px; padding: 0px; background:#EEE;}
+div.vistaEmpresa div.direccion p {display:inline; font-size: 0.9em; color:#36260C; margin: 0px auto; padding: 0px; vertical-align:11%;}
+div.vistaEmpresa div.horario     {float: left; width: 660px; height: 20px; margin: 0px;}
+div.vistaEmpresa div.horario p   {display:inline; background: inherit; font-size: 0.8em; color:#36260C; margin: 0px auto;  padding: 0px;}
+div.vistaEmpresa div.direccion img {margin-top:5px}
+
+div.vistaEmpresa div.datosContacto p {display:inline;}
+div.vistaEmpresa div.datosContacto div {float: right; width: 169px; height: 17px; margin: 1px; background: inherit; text-align: center; }
+div.vistaEmpresa div.telefono1,
+div.vistaEmpresa div.telefono2 {font-size: 1.0em; color:#000;}
+div.vistaEmpresa div.fax {font-size: 0.7em; color:#555;}
+div.vistaEmpresa div.email,
+div.vistaEmpresa div.web,
+div.vistaEmpresa div.ofertas {font-size: 0.8em;}
+div.vistaEmpresa a {text-decoration: none; color:#555; font-weight:bold;}
+div.vistaEmpresa a:hover {font-weight:normal;}
+
+
+/* cuenta.tpl */
+#formCuenta .formulario {width: 990px; margin: 40px 0px 15px auto;}
+#formCuenta input.boton{width: 300px; margin: 10px auto;}
+#formCuenta input.botonValidar{width: 300px; margin: 10px auto; padding: 2px; background:#800033; color:#FFF}
+#formCuenta input.botonValidar:hover {background:#888;}
+#formCuenta div.formulario p.linea {margin: 7px 250px 10px; width: 500px; border-bottom: 1px solid #CCC;}
+
+/*vistaEmpresa.tpl*/
+div.formVistas .formulario {width: 600px; margin: 0px auto; }
+div.formVistas input.boton {width: 300px; margin: 10px auto;}
+
+/*****************************************************************************************************************/
+/*************************** Estilos comunes de tablas y su pie de navegacion    *********************************/
+/*****************************************************************************************************************/
+
+table {border-spacing: 0; width:900px; border-bottom: 1px solid #666; margin:50px auto; margin-bottom:0px; color:#294390; text-align:left;}
+tr.impar td {background: #DDD;}
+th {background-color:#36260C; color:#FFF; text-align:left;}
+th a {text-decoration: underline; color:#FFF;}
+th a:hover {text-decoration: none; color:#FFF;}
+th a.ordenAsc        {background: url("../imagenes/flecha-asc.gif") no-repeat; color:#D6BC27; padding-left: 20px;}
+th a.ordenAsc:hover  {background: url("../imagenes/flecha-asc.gif") no-repeat; color:#D6BC27; padding-left: 20px;}
+th a.ordenDesc       {background: url("../imagenes/flecha-desc.gif") no-repeat; color:#D6BC27; padding-left: 20px;}
+th a.ordenDesc:hover {background: url("../imagenes/flecha-desc.gif") no-repeat; color:#D6BC27; padding-left: 20px;}
+th, td {padding:7px 2px 7px 2px;overflow:hidden;}
+td a {text-decoration: none; font-weight: bold; color:inherit;}
+td a:hover {text-decoration: underline;}
+
+#pieNav {width: 900px; margin: 0px auto; color: #36260C; padding: 0.5em; font-weight: bold;}
+#pieNav #navIzqda {width: 130px; float: left; text-align:left; font-size: 1.2em; display:block;}
+#pieNav #navCentral {width: 640px; float: left; text-align:center; display:block;}
+#pieNav #navDcha {width: 130px; float: right; text-align:right;  font-size: 1.2em; display:block;}
+#pieNav p {display: inline; margin-top: 25px; padding:1em;}
+#pieNav a {text-decoration:none; background:inherit; color: inherit;}
+
+#formIrPag .formulario {width: 200px; margin: 10px auto;}
+#formIrPag label {float: left; clear: both; text-align: right; margin: 0.8em 5px 0 0; width: 50%; }
+#formIrPag input {float: left; margin: 1em 0 0 0; width: 30px; }
+#formIrPag input.boton {float: left; margin-left: 7px; width: 30px; }
+
+/* Anchuras especificas columnas tabla gestion usuarios */
+
+#tablaUsuarios .c0 {width: 7%;}
+#tablaUsuarios .c1 {width: 19%;}
+#tablaUsuarios .c2 {width: 24%;}
+#tablaUsuarios .c3 {width: 24%;}
+#tablaUsuarios .c4 {width: 24%;}
+
+/* Anchuras especificas columnas tabla gestion accesos */
+#tablaAccesoGral .c0 {width: 19%;}
+#tablaAccesoGral .c1 {width: 45%;}
+#tablaAccesoGral .c2 {width: 15%;}
+#tablaAccesoGral .c3 {width: 19%;}
+
+/* Anchuras especificas columnas tabla accesos por usuario */
+#tablaAccesosUsuario .c0 {width: 19%;}
+#tablaAccesosUsuario .c1 {width: 15%;}
+#tablaAccesosUsuario .c2 {width: 66%;}
+
+/* formulario para borrar el historial */
+#tablaAccesosUsuario #formLimpiarHistoria {margin-top: 50px;}
+#tablaAccesosUsuario #formLimpiarHistoria input.boton {width: 20%; }
+
+/* Anchuras especificas columnas tabla listado empresas */
+#tablaEmpresas .c0 {width: 40%;}
+#tablaEmpresas .c1 {width: 25%;}
+#tablaEmpresas .c2 {width: 20%;}
+#tablaEmpresas .c3 {width: 15%;}
+
+/* Anchuras especificas columnas tabla listado ofertas */
+#tablaOfertasGral .c0 {width: 3%;}
+#tablaOfertasGral .c1 {width: 36%;}
+#tablaOfertasGral .c2 {width: 35%;}
+#tablaOfertasGral .c3 {width: 14%;}
+#tablaOfertasGral .c4 {width: 12%;}
+
+/* Anchuras especificas columnas tabla listado ofertas por empresa */
+#tablaOfertasEmpresa .c0 {width: 3%;}
+#tablaOfertasEmpresa .c1 {width: 71%;}
+#tablaOfertasEmpresa .c2 {width: 14%;}
+#tablaOfertasEmpresa .c3 {width: 12%;}
+
+/* Anchuras especificas columnas tabla listado noticias */
+#tablaNoticiasGral .c0 {width: 3%;}
+#tablaNoticiasGral .c1 {width: 15%;}
+#tablaNoticiasGral .c2 {width: 64%;}
+#tablaNoticiasGral .c3 {width: 19%;}
+
+/* Anchuras especificas columnas tabla listado noticias */
+#tablaNoticiasUsuario  .c0 {width: 3%;}
+#ttablaNoticiasUsuario .c1 {width: 15%;}
+#tablaNoticiasUsuario  .c2 {width: 82%;}
+
+
+

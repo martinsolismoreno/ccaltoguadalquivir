@@ -1,0 +1,250 @@
+/* ---- Estilos básicos que afectan a todos los elementos de la página principal----- */
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em Verdana,sans-serif;
+  background: url("../imagenes/fondo.gif") no-repeat top center;
+}
+
+#pie, #pueblos li, #comarca li, #otros li {background-color:#0072BC;}
+
+#enlaces h3 { background-color:#F15B1B; }
+
+ul {list-style:none;  display:inline;}
+
+ul.horizontal li {float:left;}
+
+h1.errorEmpPPal {width: 660px; margin: 100px auto; padding: 25px 0px 15px;  text-align: center; font-size: 1.2em; color:#FFF; background:#800033; clear:both}
+h1.errorNotPpal {width: 1000px; margin: 50px 0px 10px; padding: 20px 0px 15px;  text-align: center; font-size: 1.2em; color:#FFF; background:#800033; clear:both}
+h1.ofertasEmpresa {width: 970px; margin: 50px 0px 25px; padding: 10px 15px 20px; text-align: center; font-size: 1.3em; color:#33564B; background:#FFF; clear:both;
+                   border-bottom: 1px solid #36260C;}
+h1.ofertasEmpresa span.prefijo {color:#888;}
+
+/* clase para los div que "limpian" */
+.clear {clear:both;}
+
+
+/* ---- Layout: estructura básica de la página principal   --------------------- */
+
+/* contenedor global de todo el portal, sólo se la asigna su anchura y se centra */
+#contenedor {width:1000px; margin: 0px auto; padding: 0px; background: #FFF; }
+
+/* layout para la parte de la cabecera de la portada principal */
+#cabecera {width: 1000px; height: 200px; margin: 0px;}
+#cabecera #logo {float: left; width:170px; height: 170px; margin: 0px;}
+#cabecera #titulo {float: right; width: 830px; height:170px; margin: 0px;}
+#cabecera #imagenes {float: left; width: 830px; height:130px; margin: 0px; overflow: hidden;}
+#cabecera #letras {float: left; width: 330px; height:40px; margin: 0px;}
+#cabecera #menuConexion {float: left; width: 490px; height:30px; margin: 10px 0px 0px 0px;}
+
+/* layout para el menu de la página principal que va debajo de la cabecara */
+#menu { width: 1000px; float:left; clear:both; margin: 0px;}
+
+/* layout para los contenidos... */
+#contenidos {float: left; width: 660px; margin: 0px; padding: 0px;}
+
+#buscador {float: left; width: 660px; height: 80px; margin: 5px 0px 0px 0px; padding: 0;}
+#texto        {float: left; width: 660px; height: 465px; margin: 5px 0 0; padding: 0;}
+#texto.inicio {float: left; width: 660px; height: 380px; margin: 5px 0 0; padding: 0;}
+#noticias {float: left; width: 660px; margin: 5px 0 0; padding: 0; }
+#cabeceraNoticias {float: left; width: 660px; height: 20px; margin: 20px 0 0; padding: 0; background-color:#EEE; border-top: 2px groove #CCC;}
+#ofertas {float: right; width: 340px; margin: 0; padding: 0;}
+
+/* layout para el pie de la página principal */
+#pie {clear: both; width:1000px; height: 40px; padding: 4px 0px;}
+
+/*--- Y a partir de aquí aspectos concretos de cada una de las partes--------*/
+
+
+/*--- Cabecera --------------------------------------------------------------*/
+
+/* imagen del logo */
+#logo a {background: #294390 url("../imagenes/logo.jpg") repeat; display:block; width:170px; height: 170px; margin:0px; text-decoration: none;}
+#logo a:hover {background: url("../imagenes/logohover.jpg");}
+
+/* titulo del portal y marco de las fotos de la cabecera */
+#titulo {background: url("../imagenes/marco-fotos.gif") repeat;}
+#enlaceImagen {text-decoration: none;}
+#imagenCabecera {border: none}
+
+
+/*--- Conectar --------------------------------------------------------------*/
+#menuConexion #formulario {float: left;  width: 235px; margin: 0px;}
+#menuConexion #links {float: right; width: 255px; height:30px; margin: 0px; font-size: 1em;}
+#menuConexion #links_bienvenido {float: right; width: 470px; height:30px; margin: 0px; font-size: 1em;}
+
+#menuConexion #conectar {float:right; margin-left: 11px; padding-top: 4px}
+#menuConexion #olvido {float:right; margin-left: 12px; padding-top: 4px}
+#menuConexion #registrar {float:right; margin-left: 12px; padding-top: 4px}
+
+#menuConexion #bienvenido {float:right; margin: 0px 0px 0px 15px; padding-top: 4px; font-weight:bold;}
+#menuConexion #tucuenta {float:right; margin-left: 15px; padding-top: 4px;}
+#menuConexion #desconectar {float:right; margin-left: 15px; padding-top: 4px}
+
+
+#menuConexion {font: 0.7em Tahoma,sans-serif; color:#FFF;  margin-left: 20px;}
+#menuConexion input#usuariopp {width: 80px; height: 15px; font: 1em Tahoma,sans-serif; color:#294390; float:left; margin-left:50px;}
+#menuConexion input#passwordpp {width: 80px; height: 15px; font: 1em Tahoma,sans-serif; color:#294390; float:right;}
+#menuConexion a {text-decoration:none; color:#FFF}
+#menuConexion a:hover {text-decoration:underline;}
+
+
+/*--- Buscador --------------------------------------------------------------*/
+
+#contenedorBuscador {width: 655px; height: 80px; margin:0px auto; padding: 5px;}
+#contenedorBuscador fieldset {margin: 0px; padding: 0px;}
+#buscador div.sector {float: left; margin: 0px; padding: 8px 8px; }
+#buscador div.poblacion {float: left; margin: 0px; padding: 8px 8px;}
+#buscador div.botonBuscar {float: right; margin: 0px; padding: 6px 8px 10px;}
+
+#buscador select {margin: 0px 5px 5px; overflow: auto; padding:1px; font-size: 1.1em; color: #294390;}
+#buscador div.sector select {width: 320px; margin: 0px;}
+#buscador div.poblacion select {width: 170px; margin: 0px;}
+#buscador div.botonBuscar #buscar {width: 90px; margin: 0px; font: 1.3em Arial, sans-serif;}
+#buscador option {overflow:auto;}
+
+#buscador #marco { border: 2px solid #33564B; margin-bottom: 10px;}
+#buscador fieldset {border: none; margin: 0px; font: 0.9em Arial, sans-serif;}
+#buscador legend {color:#33564B; font-size: 1.3em; font-weight: bold; padding: 5px;}
+
+
+/*--- Ofertas ----------------------------------------------------------------*/
+
+div.botonOfertas   {float: right; width:330px; height: 15px; margin: 2px 0px 2px 0px; padding: 0;}
+#subirOfertas { display: block; width:330px; height: 15px;}
+#bajarOfertas { display: block; width:330px; height: 15px;}
+#subirOfertas {background: #36260C url("../imagenes/flecha-subir.gif");}
+#bajarOfertas {background: #36260C url("../imagenes/flecha-bajar.gif");}
+#subirOfertas:hover {background: url("../imagenes/flecha-subir-hover.gif");}
+#bajarOfertas:hover {background: url("../imagenes/flecha-bajar-hover.gif");}
+
+div.botonOfertas img {border: none;}
+#ofertappal1, 
+#ofertappal2, 
+#ofertappal3 {width: 330px; margin: 5px 0px 5px 10px; overflow: hidden; border-top: 1px solid #AAA; border-bottom: 1px solid #EEE; background:#EEE}
+#ofertappal1 img, 
+#ofertappal2 img, 
+#ofertappal3 img {border: none; display: block; margin: 0px auto; padding: 0px 5px 20px 5px; text-align: center; overflow: hidden; }
+#ofertappal1 p, 
+#ofertappal2 p, 
+#ofertappal3 p {font: 0.6em Tahoma,sans-serif; color:#777; margin: 0px; padding: 5px 0px; text-align:center;}
+
+div.oferta {float: left; clear: both; width: 1000px; margin-top: 10px;}
+div.oferta div.izqda {float: left;  width: 455px; margin-top: 25px;}
+div.oferta div.dcha {float: right; width: 510px; margin-top: 25px;}
+div.oferta p.tituloOferta {float: left; width: 450px; font: 1.2em Tahoma,sans-serif; color:#FFF; background: #33564B; text-align: left; text-decoration:none; display:inline;
+                           padding: 5px 5px 5px 25px; margin: 0px 0px 0px; font-weight:bold;}
+div.oferta  p.fecha {float:left; width: 450px; margin: 3px 5px 5px 10px; padding: 0px; font: 0.7em Georgia,serif; font-weight:normal; color:#36260C; display:inline;}
+div.oferta  p.condiciones {float:left; width: 450px; margin: 3px 5px 5px 10px; padding: 0px; font: 0.7em Georgia,serif; font-weight:normal; color:#36260C; display:inline;}
+div.oferta  a.link {float: left; width: 450px; margin: 3px 5px 20px 10px;; padding: 0px; color:#294390; background: #FFF; font: 0.7em Tahoma,sans-serif; font-weight:bold; display: inline; text-decoration:none;}
+div.oferta  a.link:hover {text-decoration:underline;}
+div.oferta  p.texto {float:right; width: 455px; margin: 0px 5px 20px 10px; padding: 0px; font: 0.9em Tahoma,sans-serif; font-weight:normal; color:#36260C; display:inline;}
+
+/*--- Noticias  -------------------------------------------------------------*/
+
+
+#cabeceraNoticias p {font: 0.6em Tahoma,sans-serif; color:#777; margin: 0px; padding: 5px 0px; text-align:center;}
+
+div.noticia {width: 650px; margin: 5px 5px 15px 5px; overflow: hidden;}
+
+div.noticia h4 {margin:5px 0px 0px 0px;}
+div.noticia h4 a {display:block; font: 1.2em Verdana,sans-serif; font-weight: bold; color:#36260C; background: #FFF; margin: 0px; padding: 3px 18px ; overflow:hidden;}
+div.noticia a {text-decoration:none;}
+div.noticia h4 a:hover {text-decoration: underline;}
+div.noticia p.info {margin: 0px 0px 7px 20px;}
+div.noticia .fecha {padding-left:14px; font-size: .6em; color:#294390; width: 150px; margin:0px;
+                    background: #FFF url(../imagenes/icono_fecha.gif) no-repeat left center;}
+div.noticia p.resumen {margin: 0px 0px 0px 20px; padding: 0px 5px 0px 2px; font: 0.8em Tahoma; color:#294390; display:inline; font-weight:bold;}
+div.noticia p.texto {margin: 20px 0 0 20px; padding: 0px 5px 0px 2px; font: 0.8em Georgia,serif; color:#294390; display:inline }
+div.noticia a.link {clear:both; width: 670px; text-decoration: none; font-size: 0.8em; font-weight:bold; color:#33564B; text-align: center; display:block; margin: 25px 0px 10px 0px;}
+div.noticia a.link:hover {text-decoration: underline;}
+div.noticia a.mas  {margin-left: 2px; font-size: 0.7em; color:#800033; display:inline;}
+div.noticia a.mas:hover  {text-decoration:underline; }
+div.noticia a.volver  {clear:both; width: 670px; text-decoration: none; font-size: 0.8em; font-weight:bold; color:#800033; text-align: center; display:block; margin: 25px 0px 10px 0px;}
+div.noticia a.volver:hover {text-decoration: underline;}
+
+div.noticia p.atencionjs {display:block; font: 1.2em Verdana,sans-serif; font-weight: bold; color:#FFF; background: #800033; margin: 5px 0px 5px; padding: 3px 18px ; overflow:hidden;
+                          text-align: center;}
+div.noticia p.resumenjs {margin: 0px 0px 0px 20px; padding-right: 5px; font: 0.8em Tahoma; color:#294390; display:inline; font-weight:bold;}
+div.noticia a.linkjs {clear:both; width: 670px; text-decoration: none; font-size: 0.8em; font-weight:bold; color:#33564B; text-align: center; display:block; margin: 10px 0px 10px 0px;}
+div.noticia a.linkjs:hover {text-decoration: underline;}
+
+div.noticiaCompleta {float: left; clear: both; width: 1000px; border-bottom: 5px solid #36260C; margin: 20px 0px 20px 0px;}
+div.noticiaCompleta p.titular {font: 2.2em Tahoma,sans-serif; font-weight: bold; background:#36260C; color:#FFF; text-align: center; margin:0px; padding: 5px 0px 10px;}
+div.noticiaCompleta p.fecha { float:left; margin-top: 5px; padding: 5px 7px 5px 25px; font: 1.2em Tahoma,sans-serif; font-weight:normal; color:#294390; background: #CCC; display: inline;}
+div.noticiaCompleta p.resumen {float: right; width: 855px; margin: 18px 0px;  font: 1em Tahoma,sans-serif; font-weight:bold; color:#294390; text-align:left;}
+div.noticiaCompleta p.texto {clear:both; margin: 15px 25px; font: 1em Georgia,serif; font-weight:normal; color:#294390; text-indent: 4em;}
+div.noticiaCompleta a.link {width: 1000px; text-decoration: none;  font-weight:bold; color:#33564B; text-align: center; display:block; margin-bottom: 20px;}
+div.noticiaCompleta a:hover {text-decoration: underline;}
+
+div.noticiaBreve {float: left; clear: both; width: 1000px; margin-top: 25px;}
+div.noticiaBreve a.titular {float: left; width: 450px; font: 1.1em Tahoma,sans-serif; color:#FFF; background: #294390; text-align: left; text-decoration:none; display:inline;
+                         padding: 5px 5px 5px 25px; margin: 0px 0px 25px; font-weight:bold;}
+div.noticiaBreve a.titular:hover {background: #36260C;}
+div.noticiaBreve p.fecha {float: right; width: 85px; text-align: right; margin:0px 5px 0px 0px; padding: 0px; color:#294390; background: #FFF; font: 0.7em Tahoma,sans-serif; font-weight:bold;
+                       display: inline;}
+div.noticiaBreve p.resumen {float:right; width: 410px; margin: 0px 5px 25px 5px; padding: 0px; font: 0.9em Tahoma,sans-serif; font-weight:normal; color:#36260C; display:inline;}
+
+/*--- texto-... -------------------------------------------------------------*/
+
+#texto {color: #33564B; font-family:Verdana,sans-serif;}
+#texto h1 {margin: 10px 5px 15px ; padding: 0px; font-size: 1.6em;}
+p .bienvenido {font-size: 1.5em; font-weight: bold;}
+#texto p  {margin: 10px; padding-left: 0px; font-size: 0.8em; text-indent: 2em}
+#texto p.nota  {margin: 15px; padding-left: 0px; font-size: 0.7em; text-indent: 0em; color: #000; font-weight: normal;}
+#texto a {color: inherit;}
+#texto a.masinfo1, #texto a.masinfo2 {color: #800033;}
+#texto a.masinfo1 {font-weight:bold;}
+#texto a:hover {color: #36260C;}
+#texto p.nota span {background-color: #800033; color: #FFF;}
+#texto.restringida {background:#800033;}
+#texto.restringida h1  {margin: 150px 0px 25px; padding: 10px; font: 2.5em Tahoma,sans-serif; font-weight: bold; text-align:center; color:#FFF;}
+#texto.restringida p {margin: 0px; padding: 80px; font: 1em Tahoma,sans-serif; font-weight: normal; text-align:center; color:#FFF; text-indent: 0em;}
+
+/*--- subpie-ppal -------------------------------------------------------------------*/
+#subpie-ppal {float: left; width: 1000px; height: 38px; margin: 0px auto; color: #294390; font-weight: bold; background: #FFF url("../imagenes/fondoamarillo.gif") repeat-x bottom;
+              padding-top: 27px; border-top: 1px solid #36260C; margin-top: 30px;}
+#subpie-ppal #navIzqda {width: 220px; float: left;  margin-top: 6px; text-align:left; display:block;}
+#subpie-ppal #navPag1  {width: 261px; float: left;  margin-top: 6px; text-align:right; display:block;}
+#subpie-ppal #navPag2  {width: 299px; float: left;  margin-top: 6px; text-align:left; display:block;}
+#subpie-ppal #navDcha  {width: 220px; float: right; margin-top: 6px; text-align:right; display:block;}
+#subpie-ppal p {display: inline; margin-top: 5px; padding: 7px;}
+#subpie-ppal a {text-decoration:none; background:inherit; color: inherit}
+#subpie-ppal a:hover {font-weight:normal;}
+
+#subpie-ppal #navPag1 form  {float:right; display:inline;}
+#subpie-ppal #navPag2 form  {float:left;  display:inline;}
+#subpie-ppal input {margin: 0; width: 25px; display:inline; background: #D6BC27 url("../imagenes/fondoamarillo.gif") repeat-x 0;; border: none; border-bottom: 1px solid;
+                    font: inherit; text-align: center; color:inherit}
+
+
+/*--- pie -------------------------------------------------------------------*/
+
+#pie {background-color: #294390;}
+#pie li.enlace {border-left: 1px solid #D6BC27; padding: 25px 7px 0px;  }
+#pie li.primero {padding: 25px 7px 0px;}
+#pie li {color:#D6BC27; font-size: .7em; font-weight: bold; }
+#pie li:hover {color:#FFF; font-weight: bold;}
+#pie li.ultimo {float: right; margin:0; padding:3px 3px;}
+#pie li.redes {float: right; margin:0; padding:3px 3px;}
+#pie li.valid {float: right; margin:0; padding:3px 3px;}
+#pie li.ultimo a {width:32px; height:31px; margin:0px; padding:0px; background-color:#FFF; display:block;  color:inherit; }
+#pie li.redes a {width:32px; height:31px; margin:0px; padding:0px; background-color:#FFF; display:block;  color:inherit; }
+#pie li.valid a {width:88px; height:31px; margin:0px; padding:0px; background-color:#FFF; display:block;  color:inherit; }
+#pie a {color:#D6BC27; text-decoration: none; }
+#pie a:hover {color:#FFF;}
+
+#pie li.xhtml a {background: url("http://www.w3.org/Icons/valid-xhtml10") no-repeat;}
+#pie li.css a {background: url("http://jigsaw.w3.org/css-validator/images/vcss") no-repeat;}
+#pie li.google a {background: url("../imagenes/google.gif") no-repeat;}
+#pie li.facebook a {background: url("../imagenes/facebook.gif") no-repeat;}
+#pie li.twitter  a {background: url("../imagenes/twitter.gif")  no-repeat ;}
+#pie li.rss      a {background: url("../imagenes/rss.gif")      no-repeat ;}
+
+#pie li.google:hover   a {background: url("../imagenes/google-bn.gif") no-repeat;}
+#pie li.facebook:hover a {background: url("../imagenes/facebook-bn.gif") no-repeat;}
+#pie li.twitter:hover  a {background: url("../imagenes/twitter-bn.gif")  no-repeat;}
+#pie li.rss:hover      a {background: url("../imagenes/rss-bn.gif")      no-repeat;}
+#pie li.xhtml:hover    a {background: url("http://www.w3.org/Icons/valid-xhtml10-blue")  no-repeat;}
+#pie li.css:hover      a {background: url("http://jigsaw.w3.org/css-validator/images/vcss-blue")      no-repeat;}
+file:///dos/Dropbox/principal.css

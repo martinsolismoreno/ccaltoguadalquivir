@@ -1,0 +1,12 @@
+<div id="texto" class="inicio">
+<p><span class="bienvenido">Bienvenido</span> a este portal desarrollado como parte del <strong><a href="http://www.fundacion.uned.es/actividad/idcurso/116" class="curso" >Curso de Experto Universitario en el Desarrollo de Aplicaciones Web Din&aacute;micas.</a></strong> Todas las tareas, desde la idea del portal, as&iacute; como su an&aacute;lisis, dise&ntilde;o, maquetaci&oacute;n y programaci&oacute;n han sido desarrolladas y ejecutadas por m&iacute;, cumpliendo los requisitos m&iacute;nimos que se exig&iacute;an; que eran eso, un m&iacute;nimo, pero nunca un m&aacute;ximo... Como ejemplo, adapt&eacute; la necesidad de implementar una galer&iacute;a de im&aacute;genes con la muestra continua de ofertas que ve a su derecha y por la que es posible desplazarse.</p>
+
+<p>Para valorar el trabajo realizado y el potencial del portal que se est&aacute; mostrando convendr&iacute;a ver "lo que no se ve": el c&oacute;digo y la arquitectura del sitio. Para hacerse una mejor idea, recomiendo probar lo que ser&iacute;a su  "backend", ya que act&uacute;a como una especie de "miniCMS". Es un sitio totalmente aut&oacute;nomo en su evoluci&oacute;n y desarrollo de contenidos: cada empresa que quiera adherirse y presentar sus servicios u ofertas se autogestiona a trav&eacute;s de las diferentes opciones que ofrece el portal. Hay por tanto distintos niveles de usuarios: clientes, socios (empresas o profesionales), socios "premium", gestores y administradores. Animo a navegar por esa parte probando el registro como socio o, mejor a&uacute;n, conect&aacute;ndose directamente como <a id="conectarsocio" href="{$link_conectarsocio|default:""}">socio premium</a> o <a id="conectargestor" href="{$link_conectargestor|default:""}">gestor.</a></p> 
+
+<p><a href="{$link_informacion|default:""}" class="masinfo1">M&aacute;s informaci&oacute;n</a> sobre las caracter&iacute;sticas, dise&ntilde;o y programaci&oacute;n del sitio <a href="{$link_informacion|default:""}" class="masinfo2">aqu&iacute;.</a></p>
+
+<p class="nota"><span>NOTA:</span> Todos los datos y texto que aparecen son de prueba. Algunos links "poco interesantes" para la pr&aacute;ctica a&uacute;n no est&aacute;n operativos. <strong>Todo el portal est&aacute; validado XHTML y CSS</strong>, aunque debido a que lo est&aacute; viendo desde un servidor gratuito, &eacute;ste introduce c&oacute;digo "basura" que origina que aparezcan 3 o 4 errores en XHTML en todas las p&aacute;ginas.</p> 
+
+<div class="clear"></div>
+
+</div>

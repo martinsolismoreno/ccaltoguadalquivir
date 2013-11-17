@@ -1,0 +1,39 @@
+/*--- Menu principal -------------------------------------------------------*/
+
+/*-- Este menú es una modificación del menú creado por Craig Erskine. Description: Dynamic Menu System - Horizontal/Vertical */
+/*-- Ejemplo disponible en la siguiente dirección: http://qrayg.com/experiment/cssmenus/ --*/
+
+ul#navmenu-h {margin: 0; padding: 0; list-style: none; position: relative;}
+
+ul#navmenu-h li.bandera {width: 27px; margin: 0px; padding:0px;} /*por 2*/
+ul#navmenu-h li#menuB {width: 193px; text-align:center;}
+ul#navmenu-h li#menuO {width: 193px; text-align:center;}
+ul#navmenu-h li#menuN {width: 193px; text-align:center;}
+ul#navmenu-h li#menuA {width: 212px; text-align:center;}
+ul#navmenu-h li#menuC {width: 155px; text-align:center;}
+
+ul#navmenu-h ul { width: 270px; /* Sub Menu Width */ font-size: 1em; margin: 0; list-style: none; display: none; position: absolute; top: 100%; left:-100%; }
+ul#navmenu-h ul ul,ul#navmenu-h ul ul ul { top: 0; left: 100%; }
+ul#navmenu-h li { float: left; display: inline; position: relative; background: #D6BC27 url("../imagenes/fondoamarillo.gif") repeat-x 0; }
+ul#navmenu-h ul li { width: 100%; display: block; } /* Root Menu */
+ul#navmenu-h a { color: #800033; padding: 6px; display: block; text-decoration: none; height: 1%;  text-align: center; font-size: 1.2em; } /* Root Menu Hover Persistence */
+ul#navmenu-h a:hover,ul#navmenu-h li:hover a,ul#navmenu-h li.iehover a { background: #D6BC27 url("../imagenes/fondoamarillo.gif"); color: #33564B; font-weight: bold;} /* 2nd Menu */
+ul#navmenu-h li:hover li a,ul#navmenu-h li.iehover li a { float: none; background: #294390; color: #FFF; font-size: 0.9em; } /* 2nd Menu Hover Persistence */
+ul#navmenu-h li:hover li a:hover,ul#navmenu-h li:hover li:hover a,ul#navmenu-h li.iehover li a:hover,ul#navmenu-h li.iehover li.iehover a { background: #D6BC27; color:#33564B; font-weight: bold; } /* 3rd Menu */
+ul#navmenu-h li:hover li:hover li a,ul#navmenu-h li.iehover li.iehover li a { background: #294390;} /* 3rd Menu Hover Persistence */
+ul#navmenu-h li:hover li:hover li:hover li a:hover,ul#navmenu-h li.iehover li.iehover li.iehover li a:hover { background: #294390; } /* Hover Function - Do Not Move */
+ul#navmenu-h li:hover ul ul,ul#navmenu-h li:hover ul ul ul,ul#navmenu-h li.iehover ul ul,ul#navmenu-h li.iehover ul ul ul { display: none; }
+ul#navmenu-h li:hover ul,ul#navmenu-h ul li:hover ul,ul#navmenu-h ul ul li:hover ul,ul#navmenu-h li.iehover ul,ul#navmenu-h ul li.iehover ul,ul#navmenu-h ul ul li.iehover ul { display: block; }
+ul#navmenu-h li:hover { background-color:#294390;}
+ul#navmenu-h li ul li a { margin-top: 1px; }
+ul#navmenu-h li ul li   { background:  #D6BC27; }
+
+/*imagenes de fondo para las opciones de idiomas*/
+#menu li a.esp {background: #294390 url("../imagenes/esp.gif") no-repeat 0; width: 27px;}
+#menu li a.eng {background: #294390 url("../imagenes/eng.gif") no-repeat 0; width: 27px;}
+#menu li a.esp:hover {background: #294390 url("../imagenes/esphover.gif") no-repeat 0; width: 27px;}
+#menu li a.eng:hover {background: #294390 url("../imagenes/enghover.gif") no-repeat 0; width: 27px;}
+
+/*clase para señalar la opción del menu seleccionada*/
+ul#navmenu-h>li.selected a {font-weight:bold; color: #33564B;}
+ul#navmenu-h>li.selected a:hover {font-weight:normal; color: #33564B;}

@@ -1,0 +1,28 @@
+/* vistaEmpresa.tpl */
+div.vistaEmpresa {float: left; width: 1000px; height: 170px; margin: 50px 0px; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; overflow:hidden;}
+div.vistaEmpresa div.logoempresa {float: left; width: 170px; height: 170px; margin: 0px; background: inherit;}
+div.vistaEmpresa div.textoEmpresa {float: left; width: 660px; height: 170px; margin: 0px; background: inherit;}
+div.vistaEmpresa div.franja {float:right; width: 169px; height: 45px; margin: 0px 0px 5px; background: #EEE; border-left: solid 1px #EEE}
+div.vistaEmpresa div.datosContacto {float: right; width: 169px; height: 120px; margin: 0px; background: inherit; border-left: solid 1px #EEE}
+
+
+div.vistaEmpresa div.nombre {float: left; width: 660px; height: 45px; margin: 0px 0px 3px 0px; background: #EEE}
+div.vistaEmpresa div.nombre p {margin: 7px auto; font-size: 1.5em; font-weight:bold; color:#294390; text-align:center;}
+div.vistaEmpresa div.descripcion {float: left; width: 645px; height: 65px; margin: 3px 5px 3px 10px; background: inherit;}
+div.vistaEmpresa div.descripcion p {text-align:left; font-size: 0.9em; font-family: Times, serif; color:#000; margin: 0px auto; padding: 0px; text-indent: 4em}
+div.vistaEmpresa div.direccion   {float: left; width: 660px; height: 25px; margin: 3px 0px 0px 0px; padding: 0px; background:#EEE; text-align:center}
+div.vistaEmpresa div.direccion p {display:inline; font-size: 0.9em; color:#36260C; margin: 0px auto; padding: 0px; vertical-align:11%; text-align:center}
+div.vistaEmpresa div.horario     {float: left; width: 660px; height: 20px; margin: 0px; text-align:center}
+div.vistaEmpresa div.horario p   {display:inline; background: inherit; font-size: 0.8em; color:#36260C; margin: 0px auto;  padding: 0px; text-align:center}
+div.vistaEmpresa div.direccion img {margin-top:5px}
+
+div.vistaEmpresa div.datosContacto p {display:inline;}
+div.vistaEmpresa div.datosContacto div {float: right; width: 169px; height: 17px; margin: 1px; background: inherit; text-align: center; }
+div.vistaEmpresa div.telefono1,
+div.vistaEmpresa div.telefono2 {font-size: 1.0em; color:#000;}
+div.vistaEmpresa div.fax {font-size: 0.7em; color:#555;}
+div.vistaEmpresa div.email,
+div.vistaEmpresa div.web,
+div.vistaEmpresa div.ofertas {font-size: 0.8em;}
+div.vistaEmpresa a {text-decoration: none; color:#555; font-weight:bold;}
+div.vistaEmpresa a:hover {font-weight:normal;}
